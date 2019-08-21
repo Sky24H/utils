@@ -4,7 +4,7 @@ import os
 import numpy as np
 import cv2
 
-
+#For object in center and backgound is close to balck or white.
 for curDir, dirs, files in os.walk('./mask'):
 	for file in files:
 		image = np.array(Image.open(os.path.join(curDir, file)), dtype=np.float32)
