@@ -1,1 +1,1 @@
-# Some basic program of image processing & others
+# Basic programs of Image Processing & Computer Vision
