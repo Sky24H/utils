@@ -14,6 +14,6 @@ def rename(path, save_path):
                         pic, [cv2.IMWRITE_JPEG_QUALITY, 100])
 
 
-path = './masks/'
-save_path = './mask_processed/'
+path = './imgs/'
+save_path = './imgs_processed/'
 rename(path, save_path)

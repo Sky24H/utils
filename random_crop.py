@@ -29,8 +29,11 @@ def get_random_crop(image, crop_height, crop_width, flag):
 
     return image
 
+data_dir = './data'
+save_dir = './test'
+os.makedirs(save_dir, exist_ok=True)
 
-for curDir, dirs, files in os.walk('./data'):
+for curDir, dirs, files in os.walk(data_dir):
     for file in files:
         count += 1
 
@@ -44,4 +47,4 @@ for curDir, dirs, files in os.walk('./data'):
         else:
             image = get_random_crop(
                 image, image.shape[1]/3, image.shape[0]/2, 1)
-        cv2.imwrite(os.path.join('./test', file), image)
+        cv2.imwrite(os.path.join(save_dir, file), image)

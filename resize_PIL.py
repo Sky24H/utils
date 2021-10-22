@@ -2,7 +2,7 @@ import glob
 from PIL import Image
 from tqdm import tqdm
 
-path = './datasets_optimized_SMIS/*/*/*/*'
+path = './datasets/*/*/*/*'
 imgs = glob.glob(path)
 
 for i in tqdm(range(len(imgs))):

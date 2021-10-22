@@ -18,7 +18,9 @@ def get_random_crop(image, crop_height, crop_width, flag):
     return abnormal
 
 
-for curDir, dirs, files in os.walk('./left'):
+data_dir = './left'
+
+for curDir, dirs, files in os.walk(data_dir):
     for file in files:
         image = np.array(Image.open(
             os.path.join(curDir, file)), dtype=np.float32)

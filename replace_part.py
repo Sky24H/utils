@@ -28,7 +28,7 @@ def replace(image, ng, flag):
 
 for curDir, dirs, files in os.walk('./0819_data'):
 	for file in files:
-		mask = np.array(Image.open("mask_processed/"+str(np.random.randint(1,37))+'.png'), dtype=np.float32)
+		mask = np.array(Image.open("imgs_processed/"+str(np.random.randint(1,37))+'.png'), dtype=np.float32)
 		mask = cv2.cvtColor(mask, cv2.COLOR_BGR2RGB)
 		image = np.array(Image.open(os.path.join(curDir, file)), dtype=np.float32)
 		image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)

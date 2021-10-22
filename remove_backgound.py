@@ -5,8 +5,6 @@ import numpy as np
 import cv2
 
 # For object in center and backgound is close to balck or white.
-
-
 def remove_back(path, save_path):
     for curDir, dirs, files in os.walk(path):
         for file in files:
@@ -24,5 +22,5 @@ def remove_back(path, save_path):
 
 
 path = './mask'
-save_path = './lala'
+save_path = './test'
 remove_back(path, save_path)
