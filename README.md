@@ -1,1 +1,1 @@
-# Basic programs of Image Processing & Computer Vision
+# Useful functions of Image Processing & Computer Vision
